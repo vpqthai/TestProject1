@@ -1,5 +1,6 @@
 
 using StudentServiceLib;
+using System.Security.Cryptography;
 
 namespace _520H0577
 {
@@ -53,12 +54,13 @@ namespace _520H0577
             bool ExceptionOccured = false;
             try
             {
-                s.Score = 11.4;
+                s.Score = 9.4;
             } catch(SystemException)
             {
                 ExceptionOccured = true;
             }
             Assert.AreEqual(true, ExceptionOccured);
         }
+        
     }
 }
